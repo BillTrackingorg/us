@@ -1,0 +1,10 @@
+name: permalinks
+on:
+  schedule: [{ cron: '*/15 * * * *' }]
+  workflow_dispatch: {}
+concurrency: { group: permalinks, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  render:
+    uses: BillTrackingorg/billtrackingorg.github.io/.github/workflows/permalinks.yml@main
+    with: { legislature: us }
