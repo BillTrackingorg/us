@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -157,7 +152,7 @@ https://billtracking.org/us/p/us-20260729-c51148b1"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260729-c51148b1-body"><h2 class="card-headline" id="t-us-20260729-c51148b1">Added to the congressional calendars</h2><div class="card-body-lines"><p>Senate:</p><p>S.J.Res. 199: A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to &quot;Restoring Flexibility in the Child Care and Development Fund (CCDF)&quot;.</p><p>S.J.Res. 187: A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to &quot;Modification to the Start of the Submission Period for Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS) Reporting and Recordkeeping Under TSCA 8(a)(7)&quot;.</p><p>S. 494: National Plan for Epilepsy Act</p><p>S. 380: Rural Obstetrics Readiness Act</p><p>S. 2658: Medication Affordability and Patent Integrity Act</p><p>S. 4110: EMPOWER for Health Act</p><p>S. 1874: Title VIII Nursing Workforce Reauthorization Act of 2025</p><p>S. 5026: Childhood Diabetes Reduction Act of 2026</p><p>S. 4974: Making America&#39;s Food Safer Act</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260729-c51148b1-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260729-c51148b1-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 29 July 2026</p>
 </article>
 

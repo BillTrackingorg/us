@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -158,7 +153,7 @@ https://billtracking.org/us/p/us-20260722-6dde1212"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260722-6dde1212-body"><h2 class="card-headline" id="t-us-20260722-6dde1212">Markup scheduled | Health, Education, Labor, and Pensions</h2><div class="card-body-lines"><p>Bills for markup:</p><p>S.5046: A bill to prohibit the transfer of certain offices and functions of the Department of Education to other Federal agencies</p><p>S.2511: A bill to establish a postsecondary student data system</p><p>S.3010: A bill to amend the Individuals with Disabilities Education Act to improve provisions relating to dyslexia</p><p>S.3589: A bill to amend the Higher Education Act of 1965 to provide students with disabilities and their families with access to critical information needed to select the right college and succeed once enrolled</p><p>S.4097: A bill to establish that a State-based education loan program is excluded from certain requirements relating to a preferred lender arrangement</p><p>S.4689: A bill to strengthen literacy outcomes for all students, to amend the comprehensive literacy State development grant program, and to ensure Federal accountability and investment in research, teacher preparation, and evidence-based instruction aligned with the science of reading</p><p>S.3333: A bill to modify the eligibility requirements and account contribution maximum for pension-linked emergency savings accounts</p><p>S.4965: A bill to amend the Railroad Retirement Act of 1974 to establish a Railroad Retirement Board Administrative Account, and</p><p>S.3097: A bill to provide additional protections with respect to health information.</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260722-6dde1212-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260722-6dde1212-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 22 July 2026</p>
 </article>
 

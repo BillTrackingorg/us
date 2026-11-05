@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -154,7 +149,7 @@ https://billtracking.org/us/p/us-20260918-0eae71ae"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260918-0eae71ae-body"><h2 class="card-headline" id="t-us-20260918-0eae71ae">Markup scheduled | Indian Affairs</h2><div class="card-body-lines"><p>Bills for markup:</p><p>S.5354: A bill to reauthorize the Native American Housing Assistance and Self-Determination Act of 1996; to be immediately followed by hearings to examine</p><p>S.1750: A bill to reaffirm the applicability of the Indian Reorganization Act to the Poarch Band of Creek Indians</p><p>S.3859: A bill to amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993 with respect to future membership in the Catawba Indian Nation</p><p>S.4053: A bill to take certain land in the State of California into trust for the benefit of the Pechanga Band of Indians, and</p><p>H.R.226: A bill to take certain Federal lands in Tennessee into trust for the benefit of the Eastern Band of Cherokee Indians.</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260918-0eae71ae-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260918-0eae71ae-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 18 September 2026</p>
 </article>
 

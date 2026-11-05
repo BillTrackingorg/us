@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -162,7 +157,7 @@ https://billtracking.org/us/p/us-20261031-ec72c175"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20261031-ec72c175-body"><h2 class="card-headline" id="t-us-20261031-ec72c175">Added to the congressional calendars</h2><div class="card-body-lines"><p>House:</p><p>H.R. 10136: Crossett Experimental Forest Act of 2026</p><p>H.R. 10306: Technical Correction to the Shoshone-Paiute Tribes of the Duck Valley Reservation Water Rights Settlement Act of 2025</p><p>H.R. 4598: Technical Corrections to the Northwestern New Mexico Rural Water Projects Act, Taos Pueblo Indian Water Rights Settlement Act, and Aamodt Litigation Settlement Act</p><p>H.R. 8183: MATCH Act of 2026</p><p>H.R. 9269: Renewing the African American Civil Rights Network Act</p><p>H.R. 9600: Common Sense 250 Act of 2026</p><p>S. 675: Theodore Roosevelt Presidential Library Act</p><p>H.R. 3331: Mariner Exam Modernization Act</p><p>H.R. 7254: To amend the National Trails System Act to direct the Secretary of the Interior to conduct a study on the feasibility of designating the Bay Area Ridge National Scenic Trail, and for other purposes.</p><p>H.R. 7954: Don Young Doug LaMalfa Indian Buffalo Management Act</p><p>H.R. 8195: Responsible Cormorant Management and Control Act of 2026</p><p>H.R. 8483: Barona Group of Capitan Grande Band of Mission Indians Land Transfer Act of 2026</p><p>H.R. 9640: Earth MRI Reauthorization Act of 2026</p><p>H.R. 9785: South Dakota Water Feasibility Studies Act</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20261031-ec72c175-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20261031-ec72c175-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 31 October 2026</p>
 </article>
 

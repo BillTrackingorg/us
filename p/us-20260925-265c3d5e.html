@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -154,7 +149,7 @@ https://billtracking.org/us/p/us-20260925-265c3d5e"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260925-265c3d5e-body"><h2 class="card-headline" id="t-us-20260925-265c3d5e">Added to the congressional calendars</h2><div class="card-body-lines"><p>Senate:</p><p>H.R. 9340: Ratepayer Protection Act</p><p>S. 5526: An original bill to provide for the reform and continuation of agricultural and other programs of the Department of Agriculture through fiscal year 2031, and for other purposes.</p><p>House:</p><p>H.R. 4986: Parents Opt-in Protection Act</p><p>H.R. 5436: End Transcript Withholding for Veterans Act</p><p>H.R. 8052: Veteran Infection Prevention Act</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260925-265c3d5e-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260925-265c3d5e-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 25 September 2026</p>
 </article>
 

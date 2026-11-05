@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -155,7 +150,7 @@ https://billtracking.org/us/p/us-20260910-df910bcd"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260910-df910bcd-body"><h2 class="card-title" id="t-us-20260910-df910bcd">Kayleigh’s Law Act of 2026</h2><p class="card-meta">Judiciary Committee · Rep. Abraham Hamadeh (R-AZ)</p><p class="card-action"><svg class="glyph glyph-cal" aria-hidden="true"><use href="#calendar-event-band"/></svg><span class="card-action-date"> 31 August 2026  |  </span><span class="glyph-wrap has-badge"><svg class="glyph glyph-label" aria-hidden="true"><use href="#capitol"/></svg><span class="glyph-badge"><svg class="glyph" aria-hidden="true"><use href="#check"/></svg></span></span><span class="card-action-label">Passed House with amendment (voice vote)</span></p></div>
   <div class="card-anchored"><p class="card-next"><span class="lead">What&#39;s next: </span>To the Senate (if and when it takes it up)</p></div>
   <div class="card-deferred"><div class="card-summary"><p class="summary-para"><span class="lead">Official summary (Congressional Research Service, Reported to House): </span>Kayleigh’s Law Act of 2026</p><p class="summary-para summary-gap-para">This bill establishes a federal statutory framework to require federal courts to issue an order prohibiting contact with a victim (i.e., a no-contact order) in the case of a defendant who is convicted of certain violent crimes or sex crimes.</p><p class="summary-para summary-gap-para">Specifically, in the case of a defendant convicted of a felony offense that is a crime of violence or that involves a sexual act or sexual conduct, on a motion by the victim or federal government, the court must issue a no-contact order.</p><p class="summary-para summary-gap-para">Under the framework, the no-contact order must be imposed at sentencing and be in effect for the lifetime of the defendant unless it is terminated or suspended in accordance with specified procedures. Additionally, no fee may be assessed or collected from a victim in connection with the issuance of a no-contact order.</p></div></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260910-df910bcd-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260910-df910bcd-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <div class="card-strip"><button class="card-strip-glyph" aria-label="Vote breakdown"><svg class="glyph" aria-hidden="true"><use href="#chart-bar"/></svg></button><div class="vote-chips" role="group" aria-label="Your stance on the bill"><button class="vote-chip" data-dir="up" aria-pressed="false" disabled>▲ Yea</button><button class="vote-chip" data-dir="down" aria-pressed="false" disabled>▼ Nay</button></div>
   </div>
   <div class="card-foot"><p class="card-posted">Posted 10 September 2026</p><p class="vote-reason">Sign in to vote or follow</p></div>

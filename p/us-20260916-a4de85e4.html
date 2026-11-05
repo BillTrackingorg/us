@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -149,7 +144,7 @@ https://billtracking.org/us/p/us-20260916-a4de85e4"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260916-a4de85e4-body"><h2 class="card-title" id="t-us-20260916-a4de85e4">I&amp;A Mission Reorientation Act of 2026</h2><p class="card-meta">Homeland Security Committee · Rep. August Pfluger (R-TX)</p><p class="card-action"><svg class="glyph glyph-cal" aria-hidden="true"><use href="#calendar-event-band"/></svg><span class="card-action-date"> 15 September 2026  |  </span><span class="glyph-wrap"><svg class="glyph glyph-label" aria-hidden="true"><use href="#clipboard-text"/></svg></span><span class="card-action-label">Reported by committee (Homeland Security, as amended, H. Rept. 119-829)</span></p></div>
   <div class="card-anchored"><p class="card-next"><span class="lead">What&#39;s next: </span>Floor scheduling (leadership decides if and when it gets a vote)</p></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260916-a4de85e4-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260916-a4de85e4-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <div class="card-strip"><button class="card-strip-glyph" aria-label="Vote breakdown"><svg class="glyph" aria-hidden="true"><use href="#chart-bar"/></svg></button><div class="vote-chips" role="group" aria-label="Your stance on the bill"><button class="vote-chip" data-dir="up" aria-pressed="false" disabled>▲ Yea</button><button class="vote-chip" data-dir="down" aria-pressed="false" disabled>▼ Nay</button></div>
   </div>
   <div class="card-foot"><p class="card-posted">Posted 16 September 2026</p><p class="vote-reason">Sign in to vote or follow</p></div>

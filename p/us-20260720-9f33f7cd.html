@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -157,7 +152,7 @@ https://billtracking.org/us/p/us-20260720-9f33f7cd"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260720-9f33f7cd-body"><h2 class="card-headline" id="t-us-20260720-9f33f7cd">Coming up on the House floor — week of 20-07-2026</h2><div class="card-body-lines"><p>H.R. 2715: Destruction of Hazardous Imports Act, as amended</p><p>H.R. 2821: FDA Modernization Act 3.0</p><p>H.R. 4348: To reauthorize the Kay Hagan Tick Act, and for other purposes</p><p>H.R. 5160: Stem Cell Therapeutic and Research Reauthorization Act of 2025, as amended</p><p>H.R. 3747: Accelerating Access to Dementia and Alzheimer’s Provider Training (AADAPT) Act, as amended</p><p>H.R. 8209: School-Based Health Centers Reauthorization Act of 2026</p><p>H.R. 2001: To amend the Public Health Service Act to reauthorize a grant program for addressing dental workforce needs, as amended</p><p>H.R. 1493: To reauthorize and make improvements to Federal programs relating to the prevention, detection, and treatment of traumatic brain injuries, and for other purposes, as amended</p><p>…and 21 more on the weekly schedule.</p><p class="card-caveat" data-caveat="1">Schedules can change — committees and leadership adjust day-of.</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260720-9f33f7cd-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260720-9f33f7cd-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 20 July 2026</p>
 </article>
 

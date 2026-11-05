@@ -33,12 +33,7 @@
     /* .post-date is gone (D37): the card's own footer says the posting day
        now, and its action line the event date; the heading takes the
        dateline's bottom margin so the card sits where it did. */
-    /* The static card (see this block's header). */
-    .post-wrap .card-deferred { display: block; }
-    .post-wrap .card-body { max-height: none; overflow: visible; }
-    .post-wrap .card-body::after { content: none; }
-    .post-wrap .card-title { display: block; -webkit-line-clamp: none; }
-    .post-wrap .card-expander { display: none; }
+    /* The card itself is feed.css's, open by its own class (this block's header). */
     /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
        padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
        { padding: 3.25rem 0 }) reaches this section, and the old panel's own
@@ -157,7 +152,7 @@ https://billtracking.org/us/p/us-20260831-585c9d93"><svg class="glyph" aria-hidd
   <div class="card-body" id="us-20260831-585c9d93-body"><h2 class="card-headline" id="t-us-20260831-585c9d93">Coming up on the House floor — week of 31 August 2026</h2><div class="card-body-lines"><p>H.R. 8481: Kayleigh’s Law Act of 2026, as amended</p><p>H.R.1869: Protecting American Industry and Labor from International Trade Crimes Act of 2025, as amended</p><p>H.R. 6048: NDO Fairness Act, as amended</p><p>H.R. 4584: To make technical amendments to update statutory references to certain provisions which were formerly classified to chapters 14 and 19 of title 25, United States Code, and to correct related technical errors.</p><p>H.R. 4499: To make technical amendments to update statutory references to provisions reclassified to title 34, United States Code, and to correct related technical errors.</p><p>H.R. 4523: To make technical amendments to title 49, United States Code, as necessary to improve the Code.</p><p>H.R. 4465: To amend chapters 4, 10, and 131 of title 5, United States Code, as necessary to keep those chapters current and to correct related technical errors.</p><p>H.R. 5210: To make technical amendments to update statutory references to certain provisions classified to title 2, United States Code, title 50, United States Code, and title 52, United States Code, and to correct related technical errors.</p><p>…and 15 more on the weekly schedule.</p><p class="card-caveat" data-caveat="1">Schedules can change — committees and leadership adjust day-of.</p></div></div>
   <div class="card-anchored"></div>
   <div class="card-deferred"></div>
-  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260831-585c9d93-body"><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
+  <div class="card-controls"><button class="card-expander" aria-expanded="true" aria-controls="us-20260831-585c9d93-body" hidden><span class="card-expander-label">Show less</span><svg class="glyph" aria-hidden="true"><use href="#chevron-up"/></svg></button></div>
   <p class="card-posted">Posted 31 August 2026</p>
 </article>
 
