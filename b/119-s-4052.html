@@ -49,6 +49,22 @@
     .bill-summary .summary-gap-tight { margin-top: calc(0.25 * 1.65em); }
     .bill-summary .summary-gap-para { margin-top: calc(1 * 1.65em); }
     .bill-summary .summary-gap-section { margin-top: calc(1.5 * 1.65em); }
+    .sum-pick { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+      border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+    .sum-tabs { display: flex; gap: 18px; margin: 0 0 8px; width: fit-content; }
+    .sum-tab { font-family: var(--sans); font-weight: 600; font-size: 13px; line-height: 18px;
+      color: var(--ink-soft); padding: 2px 0 3px; border-bottom: 2px solid transparent; cursor: pointer; }
+    .sum-panel { display: none; }
+    .sum-pick[value="official"]:checked ~ .sum-panel[data-tab="official"],
+    .sum-pick[value="ai"]:checked ~ .sum-panel[data-tab="ai"] { display: block; }
+    .sum-pick[value="official"]:checked ~ .sum-tabs .sum-tab[data-tab="official"],
+    .sum-pick[value="ai"]:checked ~ .sum-tabs .sum-tab[data-tab="ai"] { color: var(--accent);
+      border-bottom-color: var(--accent); }
+    .sum-pick[value="official"]:focus-visible ~ .sum-tabs .sum-tab[data-tab="official"],
+    .sum-pick[value="ai"]:focus-visible ~ .sum-tabs .sum-tab[data-tab="ai"] { outline: 3px solid var(--navy);
+      outline-offset: 2px; }
+    .bill-summary .summary-ai-note { font-family: var(--sans); font-size: .82rem; line-height: 1.5;
+      color: #5E6E82; margin-top: .6rem; }
     .bill-status { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
       border-left: 3px solid var(--accent); padding: .3rem 0 .3rem .9rem; margin: 0 0 .4rem; }
     .bill-status .st-label { font-size: 1.1rem; font-weight: 650; color: var(--navy-ink); }
