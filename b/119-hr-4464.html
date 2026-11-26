@@ -22,8 +22,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/assets/css/feed.css?v=66">
-<style>:root { --accent: var(--navy); }
-    .bill-wrap { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+<style>:root { --accent: var(--navy); }    .bill-wrap { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
     .crumbs { font-family: var(--sans); font-size: .82rem; color: var(--ink-faint);
       margin-bottom: 1.4rem; }
     .crumbs a { color: var(--ink-soft); }
@@ -36,13 +35,9 @@
     .bill-summary { background: var(--wash); border: 1px solid var(--line);
       border-radius: var(--radius); padding: .9rem 1.1rem; font-size: 1rem; line-height: 1.65;
       color: var(--ink); margin: 0 0 1.2rem; }
-    /* The official summary's lead-in, naming its source and version, in the weight of the
-       card's lead-ins (D42). */
+
     .bill-summary .lead { font-family: var(--sans); font-weight: 600; }
-    /* Its blocks (summaryBlocksHtml), as the card draws them: a section's label and a
-       heading line in the lead's weight, the gap before a block by its class, in lines of
-       the box's 1.65 (SUMMARY_GAP_LINES). The box keeps the 62ch measure and its paragraphs
-       fill it. */
+
     .bill-summary { max-width: 62ch; }
     .bill-summary p { margin: 0; max-width: none; }
     .bill-summary .summary-label, .bill-summary .summary-heading { font-weight: 600; }
@@ -66,12 +61,7 @@
     .bill-summary .summary-ai-note { font-family: var(--sans); font-size: .82rem; line-height: 1.5;
       color: #5E6E82; margin-top: .6rem; }
     .bill-wrap { --ink-faint-aa: #5E6E82; }
-    /* [2026-11-14, the owner] The reference and, right after it, the cards' bell, beside the heading and never in
-       it: as on a card. The bell is the card's own (feed.css), in the upper half of the heading's line (his pick over
-       centring it on the reference's letters): the row holds to its top, and the bell's -7px margin puts its glyph 2px
-       under the line's top. The 10px gap holds its overhang, as a card's row does. The note a press shows wraps to a
-       line of its own under the heading. This was the top line: the legislature's line with the bell at its right
-       (.bill-top), the note under it at the right. */
+
     .bill-kicker { margin: 0; }
     .bill-head { display: flex; flex-wrap: wrap; align-items: flex-start; column-gap: 10px; margin: .35rem 0 .2rem; }
     .bill-head .bill-ref { margin: 0; }
@@ -112,49 +102,30 @@
       border-left: 2px solid transparent; }
     .path li.spine { border-left-color: var(--line); }
     .path li.detail { padding-left: 2rem; background: #FCFDFF; }
-    /* [2026-10-15, OPEN-ITEMS OI-0283] The hidden run as its own row after its milestone, as the
-       app's HiddenRun: no spine line, a slimmer row, the summary where the app puts its toggle. */
+
     .path li.run { padding: .45rem 0 .45rem 1.1rem; }
     .path li.run .row-run { margin-top: 0; }
-    /* A run after a detail row (a newest row that is not a milestone) keeps that row's indent. */
+
     .path li.detail + li.run { padding-left: 2rem; }
-    /* [2026-10-15, OPEN-ITEMS OI-0283 follow-up, the owner: "we should be consistent"] A row that opens
-       a post shows the phone's "this opens" glyph at its right edge (chevron-right, the faint ink;
-       OpensPost on the phone), inside the row's own link. The row makes room for it, linked or not,
-       so the text keeps one width down the path. TWO CLASSES ON PURPOSE: the general .glyph rule
-       below sets width, height and colour too, and with one class it would win by coming later
-       (the review of 2026-10-15 caught the first cut drawing an 18 px navy chevron). The box is as
-       tall as the row's first line (the body strut, 1.0625rem x 1.7) and starts at its top, so the
-       glyph centres on that line structurally, as the phone's top:0/bottom:0/centre does; the
-       sizes are the phone's: 18 on a milestone row, 14 inside a run. */
+
     .path li { position: relative; padding-right: 1.6rem; }
-    /* [2026-10-15, the owner, from a screenshot of an opened run] A row's last line must not be one
-       stranded word (a lone "195." or "5667)"): the browser may pick its breaks so the last line
-       holds more than one word. A browser that does not know the property drops it and wraps as
-       before; nothing else reads it, and the record's words are untouched. */
+
     .path li { text-wrap: pretty; }
     .glyph.row-open { position: absolute; right: .3rem; top: .75rem; height: 1.8rem; width: 18px;
       color: var(--ink-faint); }
     .path-run .glyph.row-open { width: 14px; }
-    /* ...and the steps inside an opened run are SECONDARY, as on the phone (12.5 against the
-       card's label; "the difference shouldn't be too big, but it should be visible"): smaller,
-       the soft ink. The milestones keep their weight. (No line-height here: the li's strut sets it.) */
+
     .path-run .row-label { font-size: .875rem; color: var(--ink-soft); }
     .row-date { font-family: var(--sans); font-size: .78rem; color: var(--ink-faint); }
     .row-label { font-size: 1rem; color: var(--ink); line-height: 1.5; }
-    /* [2026-10-15, OPEN-ITEMS OI-0283, closed the same day] The link is the WHOLE ROW (the owner's
-       rule for the phone, "be generous with the tappable area"): a block anchor that looks like
-       plain text, while the label words inside it keep the site's link look (style.css a, a:hover)
-       so nothing visible changed. The hand cursor and the focus ring now cover the row. */
+
     .row-link { display: block; color: inherit; text-decoration: none; }
     .row-link:hover { color: inherit; }
     .row-link .row-opens { color: var(--navy); text-decoration: underline;
       text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .row-link:hover .row-opens { color: var(--royal); }
     .row-tally { font-variant-numeric: tabular-nums; color: var(--ink-soft); }
-    /* Its own line beneath the step, quieter than the label: this is a note
-       about EVIDENCE, not about what happened, so it must not compete with
-       the step itself. */
+
     .row-source-note { display: block; font-size: .85em; color: var(--ink-soft); }
     .row-note { color: var(--ink-soft); font-style: italic; }
     .row-text { font-size: .96rem; color: var(--ink-soft); line-height: 1.55; }
@@ -169,19 +140,13 @@
       border-top: 1px solid var(--line-soft); }
     .path-run li { border-left: 2px solid transparent; }
     .glyph-wrap { position: relative; display: inline-block; vertical-align: -.18em; margin-right: .35rem; }
-    /* The inner svg must be BLOCK or the inline line-box adds ~9px of baseline descent to the
-       wrap, and the corner badge — anchored to the wrap's bottom — lands fully BELOW the glyph
-       instead of on its corner (owner screenshot, 2026-08-20; feed.css solved the same trap with
-       vertical-align: top on cards). */
+
     .glyph-wrap .glyph { display: block; }
     .glyph { width: 1.15em; height: 1.15em; color: var(--accent);
       fill: none; stroke: currentColor; stroke-width: 1.8;
       stroke-linecap: round; stroke-linejoin: round; }
     .glyph-green { color: #1A7F37; }
-    /* The badge is the app's: a FILLED green disc with a white tick, riding the glyph's
-       TOP-right (label-icon.tsx: top = -30% of the badge, overhanging the right edge —
-       owner note; the first cut had it bottom-right and outline-only, both wrong; owner
-       screenshot 2026-08-20). Byte-for-byte the card badge in feed.css. */
+
     .glyph-badge { position: absolute; top: -3.6px; right: 0; width: 12px; height: 12px;
       border-radius: 6px; background: #1A7F37; display: flex; align-items: center; justify-content: center; }
     .glyph-badge .glyph { width: 8px; height: 8px; color: #fff; stroke-width: 3.8; }
@@ -190,8 +155,7 @@
       padding: 1rem 1.2rem; font-size: .92rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 1.4rem; }
     .honesty strong { color: var(--ink); }
     .honesty-extra { margin: .6rem 0 0; }
-    /* Visually hidden, still announced: the source link's new-tab note. The same
-       rule as feed.css's, kept with the markup it hides. */
+
     .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
       border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
 </style>

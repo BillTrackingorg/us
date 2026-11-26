@@ -23,25 +23,13 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/assets/css/feed.css?v=66">
-<style>:root { --accent: var(--navy); }
-    .post-wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+<style>:root { --accent: var(--navy); }    .post-wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
     .post-kicker { font-family: var(--sans); font-weight: 700; font-size: .72rem;
       letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint); }
     .post-kicker .tk { color: var(--accent); }
     .post-ref { font-family: var(--serif); font-size: 1.9rem; line-height: 1.2;
       color: var(--navy-ink); margin: .5rem 0 1.5rem; }
-    /* .post-date is gone (D37): the card's own footer says the posting day
-       now, and its action line the event date; the heading takes the
-       dateline's bottom margin so the card sits where it did. */
-    /* The card itself is feed.css's, open by its own class (this block's header). */
-    /* The funnel is FLAT — no panel, by ruling (funnelHtml's header).
-       padding: 0 is LOAD-BEARING: style.css's marketing rhythm (main section
-       { padding: 3.25rem 0 }) reaches this section, and the old panel's own
-       padding masked it — without this line the flat funnel floats in 52px of
-       inherited air above and below (owner spacing ruling, 2026-08-20).
-       The badge itself (.store-badge…) is styled in style.css — it appears in
-       EVERY page's footer since 2026-08-21, so its one style home is the
-       sheet every page loads; only this row's layout is the funnel's own. */
+
     .post-funnel { margin-top: 1.6rem; padding: 0; }
     .post-funnel-lead { margin: 0; font-size: .98rem; line-height: 1.6; color: var(--ink); }
     .store-badges { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .8rem; }
